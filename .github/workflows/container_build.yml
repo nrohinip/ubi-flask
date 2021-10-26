@@ -8,6 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       IMAGE_NAME: ubi-flask
+      REGISTRY: ghcr.io
     steps:
 
       - name: Clone the repository
