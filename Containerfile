@@ -1,4 +1,4 @@
-FROM registry.access.redhat.com/ubi8/ubi
+FROM registry.access.redhat.com/ubi8/ubi:latest
 RUN mkdir /opt/hello
 WORKDIR /opt/hello
 COPY hello/* /opt/hello
