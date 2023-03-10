@@ -1,4 +1,4 @@
-name: Build ubi-flask container
+name: Openshft
 on:
   - push
 
@@ -20,7 +20,7 @@ jobs:
         uses: redhat-actions/buildah-build@v2
         with:
           image: ${{ env.IMAGE_NAME }}
-          tags: latest ${{ github.sha }}
+          tags: latest ${{ env.IMAGE_TAGS }}
           containerfiles: |
             ./Containerfile
 
